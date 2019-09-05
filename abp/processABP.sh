@@ -21,5 +21,5 @@ Process Excel spreadsheet received via OPRA request and return CSV.
 fi
 
 in2csv "$1" | \
-    csvcut -c NME_LAST,NME_FIRST,NME_MI,DTE_ENROLLMENT,AMT_SALARY,NME_EMPLOYER | \
+    csvcut -c NME_LAST,NME_FIRST,NME_MI,DTE_ENROLLMENT,AMT_SALARY,EMPLOYER_NME | \
     csvsort > $OUTCSV
